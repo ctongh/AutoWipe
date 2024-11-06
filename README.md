@@ -1,2 +1,2 @@
 # AutoWipe
-Auto-clear history google extension
+Auto-clean google extension for specific browsing and searching history
