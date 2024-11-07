@@ -1,3 +1,5 @@
+**All code will be updated simultaneously on github after the expansion plug-in is released, and will be completely open source!**
+
 # AutoWipe - Privacy Protection Tool
 Automatically clear your browsing history for specific websites and search queries.
 
@@ -21,6 +23,7 @@ Automatically clear your browsing history for specific websites and search queri
 - Your privacy is our top priority
 
 ---
+**所有程式碼都將在擴充插件發布後同步更新於github，並完全開源!**
 
 # AutoWipe - 隱私保護工具
 自動清理特定網站的瀏覽紀錄和特定關鍵字的搜尋紀錄。
