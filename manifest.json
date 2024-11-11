@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "AutoWipe - Privacy Protection Tool",
+  "version": "1.0.0",
+  "description": "Automatically clear specific browsing and searching history.",
+  "permissions": [
+    "history",
+    "storage",
+    "alarms",
+    "tabs",
+    "windows"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "48.png",
+    "128": "128.png"
+  }
+}

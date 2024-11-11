@@ -1,5 +1,3 @@
-**All code will be updated simultaneously on github after the chrome extention is released, and will be completely open source!**
-
 # AutoWipe - Privacy Protection Tool
 Automatically clear your browsing history for specific websites and search queries.
 

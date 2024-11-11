@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AutoWipe</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="lang-selector">
+    <select id="languageSelect">
+      <option value="en">English</option>
+      <option value="zh">繁體中文</option>
+    </select>
+  </div>
+
+  <h2 class="i18n" data-i18n="title">AutoWipe</h2>
+  <div class="notification-container">
+      <div id="notification" class="notification"></div>
+    </div>
+
+  <div class="settings-section">
+    <div class="info-row">
+      <div class="interval-group">
+        <span class="i18n label" data-i18n="cleanInterval">Auto Clean Interval</span>
+        <select id="cleanInterval">
+          <option value="10">10 min</option>
+          <option value="30">30 min</option>
+          <option value="60">1 hour</option>
+          <option value="180">3 hours</option>
+          <option value="360">6 hours</option>
+          <option value="720">12 hours</option>
+          <option value="1440">24 hours</option>
+        </select>
+      </div>
+      <div class="timer-info">
+        <div class="time-row">
+          <span class="i18n label" data-i18n="nextCleanTime">Next:</span>
+          <span id="nextCleanTime" class="countdown">calculating...</span>
+        </div>
+        <div class="time-row">
+          <span class="i18n label" data-i18n="timeRemaining">Left:</span>
+          <span id="timeRemaining" class="countdown">calculating...</span>
+        </div>
+      </div>
+    </div>
+    <div class="switch-row">
+      <label class="switch-label">
+        <span class="i18n" data-i18n="autoCleanOnClose">Auto clean when closing last tab</span>
+        <div class="switch">
+          <input type="checkbox" id="autoCleanOnClose">
+          <span class="slider"></span>
+        </div>
+      </label>
+    </div>
+  </div>
+
+  <div class="collapsible">
+    <div class="collapsible-header">
+      <span class="i18n" data-i18n="cleanSettings">Browsing History Settings</span>
+      <span class="toggle-icon">▼</span>
+    </div>
+    <div class="collapsible-content">
+      <div class="description i18n" data-i18n="urlDescription">
+              Add URLs that you want to automatically clear from your browsing history.
+            </div>
+        <div class="input-group">
+                <input type="text" id="siteInput" class="i18n" data-i18n-placeholder="enterUrl">
+                <button id="addSite" class="i18n" data-i18n="add">Add</button>
+              </div>
+        <div id="siteList" class="site-list"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="collapsible">
+    <div class="collapsible-header">
+      <span class="i18n" data-i18n="searchSettings">Search History Settings</span>
+      <span class="toggle-icon">▼</span>
+    </div>
+    <div class="collapsible-content">
+      <div class="description i18n" data-i18n="searchDescription">
+        Add keywords that you want to automatically clear from your search history.
+      </div>
+      <div class="input-group">
+        <input type="text" id="searchKeywordInput" class="i18n" data-i18n-placeholder="enterKeyword">
+        <button id="addKeyword" class="i18n" data-i18n="add">Add</button>
+      </div>
+      <div id="keywordList" class="keyword-list"></div>
+    </div>
+  </div>
+
+  <button id="manualClean" class="i18n" data-i18n="cleanNow">Clean Now</button>
+
+  <div id="feedbackBox" class="feedback-box">
+    <p class="feedback-text">
+      <span class="i18n" data-i18n="feedback">If you like AutoWipe, please give us a star on</span>
+      <a href="https://github.com/ctongh/AutoWipe" class="github-link" target="_blank">Github</a>
+      <span class="i18n" data-i18n="feedbackThanks">Thank you for your feedback!</span>
+      <span class="heart">♥  ♥</span>
+    </p>
+  </div>
+  <!-- 確保 JS 在 DOM 完全載入後才執行 -->
+  <script src="i18n.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
