@@ -1,43 +1,41 @@
 # AutoWipe - Privacy Protection Tool
-Automatically clear your browsing history for specific websites and search queries.
-
-🤩 Key Features:
-
-⭐️ Auto-clear at customizable intervals
-
-⭐️ Selective website history removal
-
-⭐️ Search history cleaning with keywords
-
-⭐️ Supports both English and Traditional Chinese interfaces
-
-⭐️ Open-source for complete transparency and security
-
-🛡️ Privacy & Security:
-- 100% open-source code on GitHub
-- Fully transparent functionality
-- No data collection
-- No external server communication
-- Your privacy is our top priority
-
-# AutoWipe - 隱私保護工具
 自動清理特定網站的瀏覽紀錄和特定關鍵字的搜尋紀錄。
 
-🤩 主要功能：
+## 主要功能：
+- 清理使用者指定網站的瀏覽記錄
+- 清理包含特定關鍵字的瀏覽記錄
+- 自動定時清理：實現自動化的歷史記錄清理
+- 手動清理按鈕：提供即時清理選項
+- 網站/關鍵字管理：讓使用者指定要清理的內容
 
-⭐️ 可自訂自動清理的時間循環
+## 使用方法：
+1. 登陸你想刪除的關鍵字，例如：「吉伊」
+→ 執行結果：清除所有標題含有「吉伊」的搜尋紀錄
 
-⭐️ 清理特定網站歷史記錄
+2. 登陸你想刪除的網站連結，例如："https://www.ccu.edu.tw/"
+→ 執行結果：清除所有網址含有"https://www.ccu.edu.tw/"的搜尋紀錄
 
-⭐️ 清理特定關鍵字搜尋記錄
+## 常見問題：
+1. 為什麼安裝時跳出「安全瀏覽強化防護功能不信任這個擴充功能」的通知？
+   
+   回覆：是因為菜鳥開發者第一次發布擴充功能，google文件有說明新加入的開發人員需要幾個月獲得信任後才不會顯示。
+   
 
-⭐️ 支援英文、繁中介面
+3. 有無痕模式為什麼還需要這個擴充功能？
+   
+   回覆：情境：當你需要定期瀏覽某些過去會用無痕開啟的網頁時，想保有google為你儲存的偏好紀錄又不希望關閉無痕模式後全部歸零重來，AutoWipe可以辦到！
+   
 
-⭐️ 開放原始碼確保安全透明
+5. 我有新的想法想提供可以去哪裡留言？
+   
+   回覆：Chrome 線上應用程式商店！但如果在Github中發布Issue或Discussion能更快被看見。
+   
 
-🛡️ 隱私與安全：
-- 程式碼完全開源於 GitHub
-- 功能運作公開透明
-- 不收集任何資料
-- 不連接外部伺服器
-- 您的隱私安全是我們的首要考量
+7. 我也想參一咖。
+   
+   回覆：十分樂意！歡迎直接在專案中發起PR（記得要發到dev分支而不是main）。
+   
+   
+9. 會有深色模式嗎？
+    
+   回覆：會！後續版本會陸續更新。但開發者只有一人，催了不會變快...
