@@ -1,6 +1,8 @@
 # AutoWipe - Privacy Protection Tool
 自動清理特定網站的瀏覽紀錄和特定關鍵字的搜尋紀錄。
 
+連結: https://chromewebstore.google.com/detail/autowipe-privacy-protecti/pehabilbdemaopemglnkfkpbheidfagd
+
 ## 主要功能：
 - 清理使用者指定網站的瀏覽記錄
 - 清理包含特定關鍵字的瀏覽記錄
